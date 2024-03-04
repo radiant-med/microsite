@@ -1,0 +1,127 @@
+body {
+  background-color: #282424;
+  color: #e2e2e3;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(36,36,36);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.medical-imaging-container {
+  margin: 0 auto;
+  padding: 50px 10%;
+  background-color: #1a1b1c; /* For the container background color */
+  text-align: center;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.description {
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.team-member {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.team-member-photo {
+  width: 150px;
+  height: 150px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  border: none;
+}
+
+.member-details {
+  margin-top: 10px;
+}
+
+.member-name {
+  font-weight: bold;
+}
+
+.member-role {
+  font-size: 0.8em;
+  color: #e2e2e3;
+}
+
+.mentors {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.mentor {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.mentor-name {
+  font-weight: bold;
+}
+
+.mentor-email {
+  font-size: 0.9em;
+  color: #e2e2e3;
+}
+
+.milestones-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.milestones-table th,
+.milestones-table td {
+  border: 1px solid #666;
+  padding: 12px;
+  text-align: left;
+}
+
+.milestones-table th {
+  background-color: #555;
+  font-weight: bold;
+}
+
+.problem-section,
+.goals-section {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  padding-left: 20px;
+}
+
+.problem-section p,
+.goals-section p {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.problem-section p::before,
+.goals-section p::before {
+  content: '\2022';
+  position: absolute; 
+  left: -20px; 
+  color: #e2e2e3;
+}
+
