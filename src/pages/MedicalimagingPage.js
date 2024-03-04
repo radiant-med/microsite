@@ -31,6 +31,19 @@ const MedicalImagingPage = () => {
         <h2>Description</h2>
         <p className="description">In the last decade, cloud computing providers have revolutionized various industries by offering opportunities to reduce the burden of maintenance and upfront costs associated with hardware and software licensing. The healthcare sector has gradually embraced cloud technology, particularly in the realm of medical digital imaging. While digital imaging has brought numerous benefits, it also presents challenges in data storage and sharing, especially for smaller imaging centers. Leveraging cloud computing technology, this project aims to develop a Software-as-a-Service (SaaS) platform to address these challenges.</p>
 
+        <h2>Team</h2>
+        <div className="team-members">
+          {teamMembers.map(member => (
+            <div key={member.name} className="team-member">
+              <img src={member.imageUrl} alt={member.name} className="team-member-photo" />
+              <div className="member-details">
+                <div className="member-name">{member.name}</div>
+                <div className="member-role">{member.role}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
         <h2>Problems</h2>
         <div className="problem-section">
           <p>Most doctors use WhatsApp to send medical images.</p>
@@ -47,34 +60,6 @@ const MedicalImagingPage = () => {
           <p>Implement an e-commerce broker to manage service usage and apply costs based on user profiles.</p>
           <p>Provide functionality for account management, archive size management, payment/billing management, and integration with imaging viewers and source connectors.</p>
           <p>Ensure scalability, reliability, and security of the platform.</p>
-        </div>
-
-
-        <h2>Team</h2>
-        <div className="team-members">
-          {teamMembers.map(member => (
-            <div key={member.name} className="team-member">
-              <img src={member.imageUrl} alt={member.name} className="team-member-photo" />
-              <div className="member-details">
-                <div className="member-name">{member.name}</div>
-                <div className="member-role">{member.role}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <h2>Project Mentors</h2>
-        <div className="mentors">
-          {projectMentors.map(mentor => (
-            <div key={mentor.name} className="mentor">
-              <div className="mentor-details">
-                <div className="mentor-name"><strong>{mentor.name}</strong></div>
-                <div className="mentor-email" style={{ fontSize: '0.9em' }}>
-                  {mentor.role}
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
 
         <h2>Project Milestones</h2>
@@ -96,6 +81,20 @@ const MedicalImagingPage = () => {
             ))}
           </tbody>
         </table>
+        
+        <h2>Project Mentors</h2>
+        <div className="mentors">
+          {projectMentors.map(mentor => (
+            <div key={mentor.name} className="mentor">
+              <div className="mentor-details">
+                <div className="mentor-name"><strong>{mentor.name}</strong></div>
+                <div className="mentor-email" style={{ fontSize: '0.9em' }}>
+                  {mentor.role}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
