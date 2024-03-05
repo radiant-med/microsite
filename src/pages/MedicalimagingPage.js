@@ -29,8 +29,11 @@ const MedicalImagingPage = () => {
       </div>
       <div className="medical-imaging-container">
         <h2>Description</h2>
-        <p className="description">In the last decade, cloud computing providers have revolutionized various industries by offering opportunities to reduce the burden of maintenance and upfront costs associated with hardware and software licensing. The healthcare sector has gradually embraced cloud technology, particularly in the realm of medical digital imaging. While digital imaging has brought numerous benefits, it also presents challenges in data storage and sharing, especially for smaller imaging centers. Leveraging cloud computing technology, this project aims to develop a Software-as-a-Service (SaaS) platform to address these challenges.</p>
-
+        <div className="description">
+          <p>In the last decade, cloud computing providers have revolutionized various industries by offering opportunities to reduce the burden of maintenance and upfront costs associated with hardware and software licensing.</p>
+          <p>The healthcare sector has gradually embraced cloud technology, particularly in the realm of medical digital imaging. While digital imaging has brought numerous benefits, it also presents challenges in data storage and sharing, especially for smaller imaging centers.</p>
+          <p>Leveraging cloud computing technology, this project aims to develop a Software-as-a-Service (SaaS) platform to address these challenges.</p>
+        </div>
         <h2>Team</h2>
         <div className="team-members">
           {teamMembers.map(member => (
