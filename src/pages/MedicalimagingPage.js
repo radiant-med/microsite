@@ -28,7 +28,7 @@ const MedicalImagingPage = () => {
         <img src="/microsite/banner.png" className="banner"></img>
       </div>
       <div className="medical-imaging-container">
-        <h2>Description</h2>
+        <h2>Introduction</h2>
         <div className="description">
           <p>In the last decade, cloud computing providers have revolutionized various industries by offering opportunities to reduce the burden of maintenance and upfront costs associated with hardware and software licensing.</p>
           <p>The healthcare sector has gradually embraced cloud technology, particularly in the realm of medical digital imaging. While digital imaging has brought numerous benefits, it also presents challenges in data storage and sharing, especially for smaller imaging centers.</p>
@@ -47,7 +47,7 @@ const MedicalImagingPage = () => {
           ))}
         </div>
 
-        <h2>Project Mentors</h2>
+        <h2>Mentors</h2>
         <div className="mentors">
           {projectMentors.map(mentor => (
             <div key={mentor.name} className="mentor">
@@ -80,7 +80,7 @@ const MedicalImagingPage = () => {
           <p>Ensure scalability, reliability, and security of the platform.</p>
         </div>
 
-        <h2>Project Milestones</h2>
+        <h2>Milestones</h2>
         <table className="milestones-table">
           <thead>
             <tr>
@@ -100,6 +100,14 @@ const MedicalImagingPage = () => {
           </tbody>
         </table>
         
+        <h2>Expected results</h2>
+        <div className="goals-section">
+          <p>Efficient management and storage of medical imaging data through the developed SaaS platform.</p>
+          <p>Improved accessibility and sharing of medical images among healthcare professionals.</p>
+          <p>Cost-effective solution for small and medium-sized imaging centers.</p>
+          <p>Enhanced user experience with integrated viewers and source connectors. Potential for scalability and expansion of the platform to accommodate future needs.</p>
+          <p>Contribution to the advancement of cloud-based healthcare IT solutions.</p>
+          </div>
         
       </div>
     </div>
