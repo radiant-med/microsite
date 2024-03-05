@@ -39,11 +39,16 @@ p {
 
 h2 {
   color: #D9F2AB;
+  /* color: #2FCFCA; */
   margin-top: 70px;
   margin-bottom: 40px;
-  size: 30px;
-  font-weight: 400;
+
   text-transform: uppercase;
+  font-family: "Kanit", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+
+  letter-spacing: 0.1em;
 }
 
 .medical-imaging-container {
