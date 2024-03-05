@@ -110,6 +110,9 @@ const MedicalImagingPage = () => {
           </div>
         
       </div>
+      <div className="footer">
+        Copyright © 2024 Radiant Med
+      </div>
     </div>
   );
 };
