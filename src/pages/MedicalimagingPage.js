@@ -111,7 +111,7 @@ const MedicalImagingPage = () => {
         
       </div>
       <div className="footer">
-        Copyright © 2024 Radiant Med
+        Copyright © 2024 Radiant Med, Universidade de Aveiro
       </div>
     </div>
   );
