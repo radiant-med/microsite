@@ -25,7 +25,7 @@ const MedicalImagingPage = () => {
   return (
     <div>
       <div className="header">
-        <h1>Medical Imaging SaaS Project</h1>
+        <img src="/microsite/banner.png" className="banner"></img>
       </div>
       <div className="medical-imaging-container">
         <h2>Description</h2>
@@ -39,6 +39,21 @@ const MedicalImagingPage = () => {
               <div className="member-details">
                 <div className="member-name">{member.name}</div>
                 <div className="member-role">{member.role}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <h2>Project Mentors</h2>
+        <div className="mentors">
+          {projectMentors.map(mentor => (
+            <div key={mentor.name} className="mentor">
+              <img src={mentor.imageUrl} alt={mentor.name} className="round-photo" />
+              <div className="mentor-details">
+                <div className="mentor-name"><strong>{mentor.name}</strong></div>
+                <div className="mentor-email" style={{ fontSize: '0.9em' }}>
+                  {mentor.role}
+                </div>
               </div>
             </div>
           ))}
@@ -82,20 +97,7 @@ const MedicalImagingPage = () => {
           </tbody>
         </table>
         
-        <h2>Project Mentors</h2>
-        <div className="mentors">
-          {projectMentors.map(mentor => (
-            <div key={mentor.name} className="mentor">
-              <img src={mentor.imageUrl} alt={mentor.name} className="round-photo" />
-              <div className="mentor-details">
-                <div className="mentor-name"><strong>{mentor.name}</strong></div>
-                <div className="mentor-email" style={{ fontSize: '0.9em' }}>
-                  {mentor.role}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        
       </div>
     </div>
   );
