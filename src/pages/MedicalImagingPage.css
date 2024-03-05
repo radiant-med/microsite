@@ -18,6 +18,7 @@ p {
 
 .banner {
   width: 50vw;
+  pointer-events: none;
 }
 
 @media (max-width: 1400px) {
