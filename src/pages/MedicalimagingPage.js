@@ -3,11 +3,11 @@ import './MedicalImagingPage.css'; // Import CSS file
 
 const MedicalImagingPage = () => {
   const teamMembers = [
-    { name: 'Antoni Kobyłecki', role: 'Project Manager', imageUrl: '/teamMember1.png' },
-    { name: 'Maksymilian Cieślak', role: 'Lead Developer', imageUrl: '/teamMember1.png' },
-    { name: 'Mateusz Wyciszkiewicz', role: 'UI/UX Designer', imageUrl: '/teamMember1.png' },
-    { name: 'Artur Denderski', role: 'Backend Developer', imageUrl: '/teamMember1.png' },
-    { name: 'Mateusz Kubiak', role: 'Quality Assurance Engineer', imageUrl: '/teamMember1.png' }
+    { name: 'Antoni Kobyłecki', role: 'Project Manager', imageUrl: '/microsite/team1.png' },
+    { name: 'Maksymilian Cieślak', role: 'Lead Developer', imageUrl: '/microsite/team2.png' },
+    { name: 'Mateusz Wyciszkiewicz', role: 'UI/UX Designer', imageUrl: '/microsite/team3.png' },
+    { name: 'Artur Denderski', role: 'Backend Developer', imageUrl: '/microsite/team4.png' },
+    { name: 'Mateusz Kubiak', role: 'Quality Assurance Engineer', imageUrl: '/microsite/team5.png' }
   ];
 
   const milestones = [
@@ -18,8 +18,8 @@ const MedicalImagingPage = () => {
   ];
 
   const projectMentors = [
-    { name: 'Carlos Costa', role: 'carlos.costa@ua.pt', imageUrl: '/carlos_costa.png' },
-    { name: 'Luís Bastião Silva', role: 'bastiao@ua.pt', imageUrl: '/luis_bastiao_silva.png' },
+    { name: 'Carlos Costa', role: 'carlos.costa@ua.pt', imageUrl: '/microsite/mentor1.png' },
+    { name: 'Luís Bastião Silva', role: 'bastiao@ua.pt', imageUrl: '/microsite/mentor2.png' },
   ];
 
   return (
@@ -35,7 +35,7 @@ const MedicalImagingPage = () => {
         <div className="team-members">
           {teamMembers.map(member => (
             <div key={member.name} className="team-member">
-              <img src={member.imageUrl} alt={member.name} className="team-member-photo" />
+              <img src={member.imageUrl} alt={member.name} className="round-photo" />
               <div className="member-details">
                 <div className="member-name">{member.name}</div>
                 <div className="member-role">{member.role}</div>
@@ -86,6 +86,7 @@ const MedicalImagingPage = () => {
         <div className="mentors">
           {projectMentors.map(mentor => (
             <div key={mentor.name} className="mentor">
+              <img src={mentor.imageUrl} alt={mentor.name} className="round-photo" />
               <div className="mentor-details">
                 <div className="mentor-name"><strong>{mentor.name}</strong></div>
                 <div className="mentor-email" style={{ fontSize: '0.9em' }}>
