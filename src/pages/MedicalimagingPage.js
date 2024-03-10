@@ -101,7 +101,7 @@ const MedicalImagingPage = () => {
         </table>
 
         <h2>Calendar</h2>
-        <img src="microsite/calendar.png" className='calendar'></img>
+        <img src="/microsite/calendar.png" className='calendar'></img>
         
         <h2>Expected results</h2>
         <div className="goals-section">
