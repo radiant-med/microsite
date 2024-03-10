@@ -41,6 +41,10 @@ p {
   }
 }
 
+.calendar {
+  width: 100%;
+}
+
 .header h1 {
   margin: 0;
 }
